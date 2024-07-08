@@ -1,0 +1,24 @@
+<ul class="nav justify-content-center navbar">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/listings">All Warehouses</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/listings/new">Add New Warehouse</a>
+  </li>
+  <%if(!currUser){%>
+  <li class="nav-item">
+    <a class="nav-link" href="/listings/new">Signup</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/listings/new">Login</a>
+  </li>
+  <%}%><%if(currUser){%>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/logout">Logout</a>
+    </li>
+    <%}%>
+</ul>
+
